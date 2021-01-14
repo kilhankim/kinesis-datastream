@@ -49,8 +49,11 @@
                 <configuration>
                     <archive>
                     <manifest>
-                        <!-- <mainClass>com.kinesis.milk.demo.processor.StockTradesProcessor</mainClass> -->
-						<mainClass>com.kinesis.milk.demo.writer.StockTradesWriter</mainClass>
+						<!-- consumer-->
+                        <mainClass>com.kinesis.milk.demo.processor.StockTradesProcessor</mainClass> 
+
+						<!-- producer -->
+						<!--<mainClass>com.kinesis.milk.demo.writer.StockTradesWriter</mainClass> -->
 						
                     </manifest>
                     </archive>

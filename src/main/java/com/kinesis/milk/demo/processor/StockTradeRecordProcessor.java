@@ -88,11 +88,17 @@ public class StockTradeRecordProcessor implements ShardRecordProcessor {
     }
 
     private void reportStats() {
-        // TODO: Implement method
+
+        System.out.println("****** Shard " + kinesisShardId + " stats for last 1 minute ******\n" +
+        stockStats + "\n" +
+        "****************************************************************\n");
+                        
     }
 
     private void resetStats() {
-        // TODO: Implement method
+
+        stockStats = new StockStats();
+                
     }
 
     private void processRecord(KinesisClientRecord record) {

@@ -47,6 +47,16 @@ public class StockTrade {
     private long id;
 
     public StockTrade() {
+
+        // byte[] arr = new byte[record.data().remaining()];
+        // record.data().get(arr);
+        // StockTrade trade = StockTrade.fromJsonAsBytes(arr);
+        //     if (trade == null) {
+        //         log.warn("Skipping record. Unable to parse record into StockTrade. Partition Key: " + record.partitionKey());
+        //         return;
+        //         }
+        // stockStats.addStockTrade(trade);
+                        
     }
 
     public StockTrade(String tickerSymbol, TradeType tradeType, double price, long quantity, long id) {
